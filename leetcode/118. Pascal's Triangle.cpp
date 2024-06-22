@@ -3,8 +3,7 @@ class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> pascalTriangle(numRows);
-        vector<int> v = {1};
-        pascalTriangle[0] = v;
+        pascalTriangle[0] = {1};
 
         for (int i = 1; i < numRows; ++i) {
             vector<int> vec(i + 1);
